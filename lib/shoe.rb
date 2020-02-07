@@ -8,7 +8,6 @@ BRANDS = []
     @brand = brand
     BRANDS << @brands unless BRANDS.include?(@brands)
   end
-end
 
 
   def cobble
