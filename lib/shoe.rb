@@ -6,9 +6,9 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
-    BRANDS << @brands unless BRANDS.include?(@brands)
+    BRANDS << brand
+    BRANDS.uniq!
   end
-
 
   def cobble
     self.condition = "new"
