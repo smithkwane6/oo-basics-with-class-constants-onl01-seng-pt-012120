@@ -1,14 +1,22 @@
-class Shoe
-  attr_accessor :color, :size, :material, :condition
-  attr_reader :brand
+class Shoe 
 
-  def initialize(brand)
-    @brand = brand
-  end
+    attr_accessor :color, :size, :material, :condition
+    attr_reader :title
 
-  def cobble
-    self.condition = "new"
-    puts "Your shoe is as good as new!"
-  end
+    def initialize(title)
+        @title = title
+    end 
+
+    def brand
+        @title
+    end 
+
+    def cobble
+        puts "Your shoe is as good as new!"
+        @condition = "new"
+    end
+
+
+
 
 end
